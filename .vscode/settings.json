@@ -1,0 +1,19 @@
+{
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "always",
+    "source.organizeImports.biome": "always"
+  },
+  "biome.enabled": true,
+  "[typescript][typescriptreact][json]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.biome": "always",
+      "source.organizeImports.biome": "always"
+    }
+  }
+}

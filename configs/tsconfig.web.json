@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "~/*": ["../src/web/*"],
+      "@common/*": ["../src/common/*"]
+    },
+
+    "jsx": "react-jsx",
+    "lib": ["DOM", "ESNext"]
+  },
+  "include": ["../src/web"]
+}
