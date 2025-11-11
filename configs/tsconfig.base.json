@@ -18,6 +18,7 @@
     "noUncheckedSideEffectImports": true,
 
     "noEmit": true,
+    "outDir": "../build",
 
     "lib": ["ESNext"],
     "target": "es2024",

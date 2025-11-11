@@ -12,6 +12,7 @@ jobs:
         with:
           sparse-checkout: |
             configs
+            scripts
             src
             CHANGELOG.md
             LICENSE
@@ -42,9 +43,12 @@ jobs:
         shell: bash
         run: |
           rm -rf ./.git
+          rm -rf ./build
           rm -rf ./configs
           rm -rf ./node_modules
+          rm -rf ./scripts
           rm -rf ./src
+          rm -rf ./.yarn.installed
           rm -rf ./package.json
           rm -rf ./pnpm-lock.yaml
           rm -rf ./pnpm-workspace.yaml

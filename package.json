@@ -8,10 +8,11 @@
     "check:write": "biome check --write",
     "check:ci": "biome ci",
     "dev": "rsbuild dev --config configs/rsbuild.config.ts --open",
-    "build:types": "tsc",
+    "build:types": "tsc --build",
     "build:game": "rspack build --config configs/rspack.config.ts",
     "build:web": "rsbuild build --config configs/rsbuild.config.ts",
-    "build": "pnpm build:types && pnpm build:web && pnpm build:game"
+    "postbuild": "node ./scripts/postbuild.js",
+    "build": "pnpm build:types && pnpm build:game && pnpm build:web && pnpm postbuild"
   },
   "dependencies": {
     "@mantine/core": "^8.3.7",
