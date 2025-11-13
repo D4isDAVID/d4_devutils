@@ -1,0 +1,12 @@
+.code-status {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.code-status[data-error] {
+    --text-color: #e03131;
+}
+
+.code-status[data-success] {
+    --text-color: #31e031;
+}

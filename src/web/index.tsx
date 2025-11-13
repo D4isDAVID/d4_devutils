@@ -1,6 +1,7 @@
 import { Center, MantineProvider } from '@mantine/core';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import App from './components/App.tsx';
 import { theme } from './theme.ts';
 
 import '@mantine/core/styles.css';
@@ -20,8 +21,9 @@ if (rootElement) {
                 <Center
                     w="100vw"
                     h="100vh"
+                    p="5rem"
                 >
-                    Hello, world!
+                    <App />
                 </Center>
             </MantineProvider>
         </StrictMode>,

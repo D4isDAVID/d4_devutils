@@ -1,0 +1,4 @@
+.monaco-editor {
+    /* allow the editor to shrink correctly */
+    position: absolute !important;
+}

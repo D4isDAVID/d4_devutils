@@ -17,6 +17,7 @@ jobs:
             CHANGELOG.md
             LICENSE
             README.md
+            client.lua
             fxmanifest.lua
             package.json
             pnpm-lock.yaml

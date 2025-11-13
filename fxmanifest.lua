@@ -7,9 +7,16 @@ author 'David Malchin <malchin459@gmail.com>'
 repository 'https://github.com/D4isDAVID/d4_devutils'
 
 node_version '22'
+nui_callback_strict_mode 'true'
 
-client_script 'dist/client.js'
-server_script 'dist/server.js'
+client_scripts {
+    'dist/client.js',
+    'client.lua',
+}
+
+server_script {
+    'dist/server.js',
+}
 
 ui_page 'dist/web/index.html'
 file 'dist/web/**'

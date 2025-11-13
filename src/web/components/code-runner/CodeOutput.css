@@ -1,0 +1,18 @@
+.code-output textarea {
+    --input-font-family: monospace;
+    display: none;
+}
+
+.code-output textarea:focus {
+    outline: none !important;
+}
+
+.code-output textarea[data-error] {
+    display: block;
+}
+
+.code-output textarea[data-success] {
+    --input-color: #31e031 !important;
+    --input-bd: #31e031 !important;
+    display: block;
+}
